@@ -1,0 +1,1 @@
+This bug occurs when using the Expo DocumentPicker library on Android.  After selecting a file, the promise returned by DocumentPicker.getDocumentAsync() sometimes resolves with a null value for the uri property, even though the selection was successful. This leads to errors when trying to access the file.
